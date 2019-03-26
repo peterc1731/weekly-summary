@@ -11,6 +11,6 @@ steps:
   args: ['app', 'deploy', '--project', 'weekly-summary']
 
 - name: 'gcr.io/cloud-builders/curl'
-  args: ['https://front-dot-personal-cms-1.appspot.com']
+  args: ['https://weekly-summary.appspot.com']
 
 timeout: '600s'

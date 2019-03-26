@@ -1,5 +1,4 @@
 runtime: nodejs10
-service: front
 handlers:
 - url: /.*
   script: auto
