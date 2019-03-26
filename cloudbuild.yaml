@@ -1,0 +1,16 @@
+steps:
+- name: node:10.0.0
+  entrypoint: npm
+  args: ['install']
+
+- name: node:10.0.0
+  entrypoint: npm
+  args: ['run', 'build']
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '--project', 'personal-cms-1']
+
+- name: 'gcr.io/cloud-builders/curl'
+  args: ['https://front-dot-personal-cms-1.appspot.com']
+
+timeout: '600s'
