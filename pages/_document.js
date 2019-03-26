@@ -20,6 +20,7 @@ export default class MyDocument extends Document {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#EC0000" />
             <meta name="apple-mobile-web-app-status-bar-style" content="#EC0000" />
+            <link rel="manifest" href="/manifest.json"></link>
           </Head>
           <GlobalStyles />
           <App {...props} />
