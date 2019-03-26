@@ -8,7 +8,7 @@ steps:
   args: ['run', 'build']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', '--project', 'personal-cms-1']
+  args: ['app', 'deploy', '--project', 'weekly-summary']
 
 - name: 'gcr.io/cloud-builders/curl'
   args: ['https://front-dot-personal-cms-1.appspot.com']
